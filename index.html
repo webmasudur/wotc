@@ -8,11 +8,12 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>World Over The Counte</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slider.css">
+    <!-- <link rel="stylesheet" href="css/slider.css"> -->
+    <script src="https://kit.fontawesome.com/2467cfd2c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="pb-5">
     <div class="container-fluid m-0 p-0">
         <!-- logo  -->
         <header>
@@ -27,13 +28,17 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/slider1.png" class="d-block w-100" alt="..." style="height: 200px;">
+                                <img src="images/slide1.webp" class="d-block w-100 rounded" alt="..." style="height: 200px; object-fit: cover;">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/slider2.png" class="d-block w-100" alt="..." style="height: 200px;">
+                                <img src="images/slide2.jpeg" class="d-block w-100 rounded" alt="..." style="height: 200px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/slide3.jpg" class="d-block w-100 rounded" alt="..." style="height: 200px; object-fit: cover;">
                             </div>
                         </div>
                     </div>
@@ -41,10 +46,10 @@
 
                 <!-- Text slide  -->
                 <div class="text-slide d-flex bg-white my-3">
-                    <div class="text-slide-img px-2" style="background-color: #FFAD03; border-radius: 25px 0 0 25px;">
+                    <div class="text-slide-img px-2" style="background-color: #FF664B; border-radius: 25px 0 0 25px;">
                         <img src="images/mike.png" alt="Notice" style="height: 18px; width: 18px;">
                     </div>
-                    <marquee behavior="" direction="left" style="font-size: 14px;">Each user's first deposit amount exceeds 50USDT, and can enjoy a 5% discount on the deposit amount.Please contact customer service to claim your reward.</marquee>
+                    <marquee behavior="" direction="left" style="font-size: 14px; color: #000;">Each user's first deposit amount exceeds 50USDT, and can enjoy a 5% discount on the deposit amount.Please contact customer service to claim your reward.</marquee>
 
                     <!-- <span class="col-3"></span> -->
                 </div>
@@ -55,65 +60,64 @@
         <!-- specifications  -->
 
         <div class="specification mb-2">
-            <div class="specification-wrap mx-3">
-                <div class="row pt-2">
+            <div class="specification-wrap mx-3 py-2">
+                <div class="row pt-2 py-1">
                     <div class="col-4 text-center">
                         <a href="about.html">
-                            <img src="images/about.png" alt="">
+                            <i class="fa-solid fa-address-card"></i>
                             <p>About WOTC</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
                         <a href="rules.html">
-                            <img src="images/rules.png">
+                            <i class="fa-solid fa-pen-ruler"></i>
                             <p>Rules</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
-                        <a href="download.html">
-                            <img src="images/download-app.png" alt="">
+                        <a href="download.html"><i class="fa-solid fa-download"></i>
                             <p>Download APP</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-1">
                     <div class="col-4 text-center">
                         <a href="certifications.html">
-                            <img src="images/certifications.png" alt="">
+                            <i class="fa-solid fa-certificate"></i>
                             <p>Certifications</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
                         <a href="language.html">
-                            <img src="images/language.png">
+                            <i class="fa-solid fa-language"></i>
                             <p>Language</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
                         <a href="customer-service.html">
-                            <img src="images/customer-service.png" alt="">
+                            <i class="fa-solid fa-headset"></i>
                             <p>Customer Service</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-1">
                     <div class="col-4 text-center">
                         <a href="notice.html">
-                            <img src="images/notice.png">
+                            <i class="fa-solid fa-circle-exclamation"></i>
                             <p>Notice</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
                         <a href="join.html">
-                            <img src="images/join-WOTC.png">
+                            <i class="fa-solid fa-people-group"></i>
                             <p>Join WOTC</p>
                         </a>
                     </div>
                     <div class="col-4 text-center">
                         <a href="fund.html">
-                            <img src="images/fund.png" alt="">
+                            <i class="fa-solid fa-coins"></i>
                             <p>Fund</p>
                         </a>
                     </div>
@@ -124,155 +128,227 @@
 
         <!-- Transition Notification SLider  -->
         <div class="transaction my-3">
-            <div class="transaction-wrap mx-3 p-3">
+            <div class="transaction-wrap mx-3 p-3 pb-1" style="margin-bottom: 70px;">
                 <div class="transaction-top">
                     <div class="transaction-color"></div>
                     <h6 class="pb-3">Transaction notification</h6>
                 </div>
+                <!-- new slider  -->
+                <div class="transaction-slider mb-4" id="element1">
 
-                <!-- slider start here  -->
-                <div class="pagination" id="slick-wrapper">
-
-                    <div class="slick-item d-flex">
+                    <div class="d-flex">
                         <div class="notification-image">
                             <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
                         </div>
                         <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
                             <p class="pt-0 mt-0 transition-date">2022-20-01</p>
                         </div>
                         <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
                             <p class="pt-0 mt-0 transition-short-code">AVAX</p>
                         </div>
                         <div class="transition-profit mx-3">
                             <p>+$2.09</p>
                         </div>
                     </div>
-
-                    <div class="slick-item d-flex">
+                    <div class="d-flex">
                         <div class="notification-image">
                             <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
                         </div>
                         <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
                             <p class="pt-0 mt-0 transition-date">2022-20-01</p>
                         </div>
                         <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
-                            <p class="pt-0 mt-0 transition-short-code">LINK</p>
-                        </div>
-                        <div class="transition-profit mx-3">
-                            <p>+$2.09</p>
-                        </div>
-                    </div>
-
-                    <div class="slick-item d-flex">
-                        <div class="notification-image">
-                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
-                        </div>
-                        <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
-                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
-                        </div>
-                        <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
-                            <p class="pt-0 mt-0 transition-short-code">BTC</p>
-                        </div>
-                        <div class="transition-profit mx-3">
-                            <p>+$2.09</p>
-                        </div>
-                    </div>
-
-                    <div class="slick-item d-flex">
-                        <div class="notification-image">
-                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
-                        </div>
-                        <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
-                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
-                        </div>
-                        <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
-                            <p class="pt-0 mt-0 transition-short-code">BCH</p>
-                        </div>
-                        <div class="transition-profit mx-3">
-                            <p>+$2.09</p>
-                        </div>
-                    </div>
-
-                    <div class="slick-item d-flex">
-                        <div class="notification-image">
-                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
-                        </div>
-                        <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
-                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
-                        </div>
-                        <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
                             <p class="pt-0 mt-0 transition-short-code">ADA</p>
                         </div>
                         <div class="transition-profit mx-3">
                             <p>+$2.09</p>
                         </div>
                     </div>
-
-                    <div class="slick-item d-flex">
+                    <div class="d-flex">
                         <div class="notification-image">
                             <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
                         </div>
                         <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
                             <p class="pt-0 mt-0 transition-date">2022-20-01</p>
                         </div>
                         <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
                             <p class="pt-0 mt-0 transition-short-code">ADA</p>
                         </div>
                         <div class="transition-profit mx-3">
                             <p>+$2.09</p>
                         </div>
                     </div>
-
-                    <div class="slick-item d-flex">
+                    <div class="d-flex">
                         <div class="notification-image">
                             <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
                         </div>
                         <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
                             <p class="pt-0 mt-0 transition-date">2022-20-01</p>
                         </div>
                         <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
                             <p class="pt-0 mt-0 transition-short-code">ADA</p>
                         </div>
                         <div class="transition-profit mx-3">
                             <p>+$2.09</p>
                         </div>
                     </div>
-
-                    <div class="slick-item d-flex">
+                    <div class="d-flex">
                         <div class="notification-image">
                             <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
                         </div>
                         <div class="transition-id mx-3">
-                            <p class="mb-0 pb-0">69***76</p>
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
                             <p class="pt-0 mt-0 transition-date">2022-20-01</p>
                         </div>
                         <div class="transition-quantity mx-3">
-                            <p class="mb-0 pb-0">$120.09</p>
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
                             <p class="pt-0 mt-0 transition-short-code">ADA</p>
                         </div>
                         <div class="transition-profit mx-3">
                             <p>+$2.09</p>
                         </div>
                     </div>
-
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="notification-image">
+                            <img src="images/avatar.png" alt="avatar" style="height: 40px; width:40px;">
+                        </div>
+                        <div class="transition-id mx-3">
+                            <p class="mb-0 pb-0 text-dark">69***76</p>
+                            <p class="pt-0 mt-0 transition-date">2022-20-01</p>
+                        </div>
+                        <div class="transition-quantity mx-3">
+                            <p class="mb-0 pb-0 text-dark">$120.09</p>
+                            <p class="pt-0 mt-0 transition-short-code">ADA</p>
+                        </div>
+                        <div class="transition-profit mx-3">
+                            <p>+$2.09</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
+
 
         <!-- Footer menu  -->
 
@@ -306,8 +382,8 @@
 
     </div>
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js "></script> -->
     <script src="js/slider.js"></script>
     <script src="js/script.js "></script>
 </body>
