@@ -176,7 +176,7 @@ footer .menu a img {
     height: 18px;
     width: 10px;
     position: absolute;
-    left: 20px;
+    left: 0px;
     top: 30%;
 }
 
@@ -206,7 +206,7 @@ footer .menu a img {
     border-radius: 15px 0 0 15px;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 10px;
 }
 
 .log-out a {
