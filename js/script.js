@@ -1,3 +1,4 @@
+// transaction slider start here 
 'use strict';
 (function() {
     window.AutoScroll = function(el, options) {
@@ -134,3 +135,29 @@ var Scroller1 = AutoScroll(element1, {
     speed: 10,
     requestAnimationFrame: false
 });
+
+// transaction slider end here
+
+// deposite-withdrawal page js
+function notComplete() {
+    var element = document.getElementById("not-complete");
+    element.classList.add("not-complete");
+}
+
+// notice pop up message
+
+let button = document.querySelector('#notice-btn');
+let popup = document.querySelector('#notice-popup');
+let closepop = document.querySelector('.notice-popup');
+
+button.addEventListener('click', showpopup);
+closepop.addEventListener('click', closepopup);
+
+
+function showpopup() {
+    popup.classList.add('active');
+}
+
+function closepopup() {
+    popup.classList.remove('active');
+}

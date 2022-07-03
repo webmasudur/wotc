@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>World Over The Counte</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- rules page css are same of about pages  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="about-body">
+    <!-- about page header -->
+    <div class="about-us bg-white px-4 mb-3">
+        <div class="about-top">
+            <div class="text-center back-main-page">
+                <a href="mine.html">
+                    <img src="images/right-angle.png" alt="Back Main Page"></a>Personal Information
+            </div>
+        </div>
+    </div>
+    <!-- about-page content  -->
+
+    <div class="mb-2 container-fluid mb-4">
+        <div class="bg-white py-3 pt-4 rounded ">
+            <div class="row px-4">
+                <div class="d-flex">
+                    <div class="col-6">
+                        <strong>Nickname</strong>
+                    </div>
+                    <div class="col-6" id="modify-name" style="text-align:right;">
+                        <strong style="color: tomato;">Modify</strong>
+                    </div>
+                </div>
+                <p class="border-bottom">Masudur</p>
+
+                <!-- for nickname modify popup  -->
+
+                <!-- *********add javascript and active popup message ********* -->
+                <div class="modify-wrap shadow p-3 mb-5 bg-body rounded" id="nickname-popup" style="width: 250px;">
+                    <div class="name-modify">
+                        <p><strong>Nickname</strong></p>
+                        <div class="pb-2">
+                            <input type="text" class=" border-0 w-100 border-bottom" placeholder="Please enter a nickname" style="outline: none;">
+                        </div>
+                    </div>
+                    <button type="btn" class="btn w-100 text-white rounded-4 border-0 my-3 d-block" style="background-color: tomato;">Make a setting now</button>
+                    <div id="nickname-close">
+                        <button type="btn" class="btn w-100 text-white rounded-4 border-0 my-3 d-block" style="background-color: rgb(234, 127, 109);">Cancel</button>
+                    </div>
+                </div>
+                <!-- nickname modify  end  -->
+            </div>
+
+            <div class="row px-4">
+                <strong>Nickname</strong>
+                <p class="border-bottom">+880 1773 864132</p>
+            </div>
+
+            <div class="row p-4 pt-1">
+                <div class="d-flex border-bottom">
+                    <div class="col-6">
+                        <strong>Login Password</strong>
+                    </div>
+                    <div class="col-6" style="text-align:right;">
+                        <strong style="color: tomato;">Modify</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row px-4">
+                <div class="d-flex">
+                    <div class="col-6">
+                        <strong>Withdrawal address</strong>
+                    </div>
+                    <div class="col-6" style="text-align:right;">
+                        <strong style="color: tomato;">Modify</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

@@ -54,9 +54,29 @@
 }
 
 
-/* .specification .row {
-    padding-bottom: 10px;
-} */
+/* notice pop  up message  */
+
+.notice-popup {
+    background-color: tomato;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.notice-popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.notice-popup-message {
+    display: block;
+}
+
+
+/* this code for fund . html page  */
 
 .specification .row a {
     text-decoration: none;
@@ -158,6 +178,57 @@ footer .menu a img {
     position: absolute;
     left: 20px;
     top: 30%;
+}
+
+.not-complete {
+    background-color: #FF664B;
+    color: #fff;
+}
+
+#income-order {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    display: none;
+}
+
+#income-order.active {
+    display: block;
+}
+
+
+/* for mine page  */
+
+.log-out {
+    background-color: tomato;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 15px 0 0 15px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.log-out a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* for personal info page  */
+
+.modify-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modify-wrap.active1 {
+    visibility: visible;
+    opacity: 1;
 }
 
 
